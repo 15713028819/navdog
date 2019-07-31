@@ -8,11 +8,17 @@
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="../../css/animate.css" rel="stylesheet">
-    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
 
     <!-- 引入vuejs -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!-- Sweet Alert -->
+    <link href="../../css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <!-- 绝对最后 -->
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -44,34 +50,34 @@
                 </li>
                 <!------------------------------------ 真正页面导航开始 ------------------------------------>
                 <li>
-                    <a href="./views/index.html"><i class="fa fa-diamond"></i> <span class="nav-label">首页</span></a>
+                    <a href="../index.html"><i class="fa fa-diamond"></i> <span class="nav-label">首页</span></a>
                 </li>
                 <li class="active">
-                    <a href="./views/sort/nav.html"><i class="fa fa-th-large"></i> <span class="nav-label">类别管理</span> <span class="fa arrow fa-angle-right"></span></a>
+                    <a href="../sort/nav.html"><i class="fa fa-th-large"></i> <span class="nav-label">类别管理</span> <span class="fa arrow fa-angle-right"></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="index.html"></a></li>
-                        <li class="active"><a href="./views/sort/nav.html">导航管理</a></li>
-                        <li><a href="./views/sort/classify.html">分类管理</a></li>
-                        <li><a href="./views/sort/subcategory.html">子类管理</a></li>
+                        <li class="active"><a href="../sort/nav.html">导航管理</a></li>
+                        <li><a href="../sort/classify.html">分类管理</a></li>
+                        <li><a href="../sort/subcategory.html">子类管理</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">网址管理</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="./views/site/index.html">网址管理</a></li>
+                        <li><a href="../site/index.html">网址管理</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">文章管理</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="./views/article/add.html">文章添加</a></li>
-                        <li><a href="./views/article/index.html">文章管理</a></li>
+                        <li><a href="../article/add.html">文章添加</a></li>
+                        <li><a href="../article/index.html">文章管理</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="./views/user/index.html"><i class="fa fa-envelope"></i> <span class="nav-label">用户中心 </span></a>
+                    <a href="../user/index.html"><i class="fa fa-envelope"></i> <span class="nav-label">用户中心 </span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="./views/user/index.html">个人主页</a></li>
+                        <li><a href="../user/index.html">个人主页</a></li>
                     </ul>
                 </li>
                 <!------------------------------------ 真正页面导航结束 ------------------------------------>
@@ -221,33 +227,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content animated bounceInRight">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <i class="fa fa-laptop modal-icon"></i>
-                                <h4 class="modal-title">Modal title</h4>
-                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                            </div>
-                            <div class="modal-body">
-                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged.</p>
-                                        <div class="form-group"><label>Sample Input</label> <input type="email" placeholder="Enter your email" class="form-control"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-1">
-                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">
-                      新建导航  
-                    </button>
-                </div> -->
+                
             </div>
         <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
@@ -272,8 +252,8 @@
                                 <div class="col-lg-6" style="border-right: 1px solid #eee; ">
                                     编辑
                                 </div>
-                                <div class="col-lg-6">
-                                        删除
+                                <div class="col-lg-6 demo3">
+                                        <span>删除</span>
                                 </div>
                             </div>
                             <!-- <button type="button" class="btn btn-w-m btn-link">删除</button> -->
@@ -300,6 +280,41 @@
         </div>
         </div>
 
+    <!------------------------------------ 新增模态框 start ------------------------------------>
+    <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated bounceInRight">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">新增导航</h4>
+                </div>
+                <div class="modal-body">
+                    <form method="get" class="form-horizontal">
+                        <div class="form-group"><label class="col-sm-2 control-label">导航图片</label>
+                            <div class="col-sm-10">
+                                <div id="chooseImg" style="width: 80px; height: 80px; line-height: 80px; border: 1px solid #ccc; border-radius: 8px; padding: 21px 18px;">
+                                    <span class="fa fa-picture-o" style="font-size: 40px;color: #bbb;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-sm-2 control-label">导航名称</label>
+                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                        </div>
+                        <div class="form-group"><label class="col-sm-2 control-label">导航简介</label>
+                            <div class="col-sm-10"><textarea type="text" class="form-control"> </textarea></div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------ 新增模态框 end ------------------------------------>
+
     <!-- Mainly scripts -->
     <script src="../../js/jquery-2.1.1.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
@@ -310,6 +325,96 @@
     <script src="../../js/inspinia.js"></script>
     <script src="../../js/plugins/pace/pace.min.js"></script>
 
+    <!-- DROPZONE -->
+    <script src="../../js/plugins/dropzone/dropzone.js"></script>
+
+    <!-- Sweet alert -->
+    <script src="../../js/plugins/sweetalert/sweetalert.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            // 点击删除
+            $('.demo3').click(function () {
+                console.log('点击了')
+                swal({
+                    title: "确定删除吗?",
+                    text: "删除之后不可恢复!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确认删除",
+                    cancelButtonText: "取消",
+                    closeOnConfirm: false
+                }, function () {
+                    swal({title: "删除成功!", text: "", type: "success", confirmButtonText: "完成"});
+                });
+            });
+
+            // 选择图片 两种方法未成功
+            console.log('dropzone',Dropzone)
+            // Dropzone('#chooseImg', {myAwesomeDropzone: {
+            //     autoProcessQueue: false,
+            //     uploadMultiple: true,
+            //     parallelUploads: 100,
+            //     maxFiles: 100,
+
+            //     // Dropzone settings
+            //     init: function() {
+            //         var myDropzone = this;
+            //         console.log('this',this)
+
+            //         this.element.querySelector("#chooseImg").addEventListener("click", function(e) {
+            //             e.preventDefault();
+            //             e.stopPropagation();
+            //             myDropzone.processQueue();
+            //         });
+            //         this.on("sendingmultiple", function() {
+            //             console.log('有反应')
+            //         });
+            //         this.on("successmultiple", function(files, response) {
+            //             console.log('有反应')
+            //         });
+            //         this.on("errormultiple", function(files, response) {
+            //             console.log('有反应')
+            //         });
+            //     }
+
+            // }})
+            // Dropzone.options.myAwesomeDropzone = {
+
+            //     autoProcessQueue: false,
+            //     uploadMultiple: true,
+            //     parallelUploads: 100,
+            //     maxFiles: 100,
+
+            //     // Dropzone settings
+            //     init: function() {
+            //         var myDropzone = this;
+            //         console.log('this',this)
+
+            //         this.element.querySelector("#chooseImg").addEventListener("click", function(e) {
+            //             e.preventDefault();
+            //             e.stopPropagation();
+            //             myDropzone.processQueue();
+            //         });
+            //         this.on("sendingmultiple", function() {
+            //             console.log('有反应')
+            //         });
+            //         this.on("successmultiple", function(files, response) {
+            //             console.log('有反应')
+            //         });
+            //         this.on("errormultiple", function(files, response) {
+            //             console.log('有反应')
+            //         });
+            //     }
+            // };
+
+            
+            
+
+        });
+    </script>
 
 </body>
 
