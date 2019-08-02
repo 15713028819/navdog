@@ -1,0 +1,511 @@
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>INSPINIA | Contacts</title>
+    
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    
+        <link href="../../css/plugins/dropzone/basic.css" rel="stylesheet">
+    
+        <!-- 引入vuejs -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+        <!-- Sweet Alert -->
+        <link href="../../css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    
+        <!-- 绝对最后 -->
+        <link href="../../css/animate.css" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+    
+        <div id="wrapper">
+    
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                                <img alt="image" class="img-circle" src="../../img/profile_small.jpg" />
+                                 </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                                 </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="mailbox.html">Mailbox</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <!------------------------------------ 真正页面分类开始 ------------------------------------>
+                    <li>
+                        <a href="../index.html"><i class="fa fa-diamond"></i> <span class="nav-label">首页</span></a>
+                    </li>
+                    <li>
+                        <a href="../sort/nav.html"><i class="fa fa-th-large"></i> <span class="nav-label">类别管理</span> <span class="fa arrow fa-angle-right"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="index.html"></a></li>
+                            <li><a href="../sort/nav.html">分类管理</a></li>
+                            <li><a href="../sort/classify.html">分类管理</a></li>
+                            <li><a href="../sort/subcategory.html">子类管理</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">网址管理</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="../site/index.html">网址管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">文章管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="../article/add.html">文章添加</a></li>
+                            <li class="active"><a href="../article/index.html">文章管理</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../user/index.html"><i class="fa fa-envelope"></i> <span class="nav-label">用户中心 </span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="../user/index.html">个人主页</a></li>
+                        </ul>
+                    </li>
+                    <!------------------------------------ 真正页面分类结束 ------------------------------------>
+                </ul>
+    
+            </div>
+        </nav>
+    
+            <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                <form role="search" class="navbar-form-custom" action="search_results.html">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="image" class="img-circle" src="../../img/a7.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="pull-right">46h ago</small>
+                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="image" class="img-circle" src="../../img/a4.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="pull-right text-navy">5h ago</small>
+                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="image" class="img-circle" src="../../img/profile.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="pull-right">23h ago</small>
+                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="mailbox.html">
+                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="mailbox.html">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="profile.html">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="grid_options.html">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="notifications.html">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+    
+    
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+    
+            </nav>
+            </div>
+                <div class="row wrapper border-bottom white-bg page-heading">
+                    <div class="col-sm-4">
+                        <h2>文章管理</h2>
+                        <ol class="breadcrumb w-100p">
+                            <li>
+                                文章管理
+                            </li>
+                            <li class="active">
+                                <strong>文章管理</strong>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="title-action">
+                            <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">
+                                新建文章
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="ibox-content">
+                    <div class="row m-b-lg">
+                        <div class="col-sm-3 m-b-xs">
+                            <div data-toggle="buttons" class="btn-group">
+                                <label class="btn btn-md btn-white active"> <input type="radio" id="option1" name="options"> 全部 </label>
+                                <label class="btn btn-md btn-white"> <input type="radio" id="option1" name="options"> 设计 </label>
+                                <label class="btn btn-md btn-white"> <input type="radio" id="option2" name="options"> 前端 </label>
+                                <label class="btn btn-md btn-white"> <input type="radio" id="option3" name="options"> 后端 </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 m-b-xs">
+                            <select class="input-md form-control input-s-md inline">
+                                <option value="0">热门推荐</option>
+                                <option value="1">最新收录</option>
+                                <option value="2">其他子类</option>
+                                <option value="3">其他子类</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3 m-b-xs">
+                                <select class="input-md form-control input-s-md inline">
+                                    <option value="0">热门推荐</option>
+                                    <option value="1">最新收录</option>
+                                    <option value="2">其他子类</option>
+                                    <option value="3">其他子类</option>
+                                </select>
+                            </div>
+                        <div class="col-sm-3">
+                            <div class="input-group"><input type="text" placeholder="Search" class="input-md form-control"> <span class="input-group-btn">
+                                <button type="button" class="btn btn-md btn-primary">搜索</button> </span></div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+    
+                                <th></th>
+                                <th>名称 </th>
+                                <th>作者</th>
+                                <th>发布时间</th>
+                                <th>阅读量</th>
+                                <th>赞</th>
+                                <th>评论</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="checkbox"  checked class="i-checks" name="input[]"></td>
+                                <td>Project<small>This</small></td>
+                                <td>Project<small>This</small></td>
+                                <td><span class="pie">0.52/1.561</span></td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>
+                                    <button type="button" class="btn btn-w-s btn-info">编辑</button>
+                                    <button type="button" class="btn btn-w-s btn-danger">删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="i-checks" name="input[]"></td>
+                                <td>Project<small>This</small></td>
+                                <td>Alpha project</td>
+                                <td><span class="pie">6,9</span></td>
+                                <td>40%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>
+                                    <button type="button" class="btn btn-w-s btn-info">编辑</button>
+                                    <button type="button" class="btn btn-w-s btn-danger">删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="i-checks" name="input[]"></td>
+                                <td>Betha project</td>
+                                <td>Betha project</td>
+                                <td><span class="pie">3,1</span></td>
+                                <td>75%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>
+                                    <button type="button" class="btn btn-w-s btn-info">编辑</button>
+                                    <button type="button" class="btn btn-w-s btn-danger">删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="i-checks" name="input[]"></td>
+                                <td>Gamma project</td>
+                                <td>Gamma project</td>
+                                <td><span class="pie">4,9</span></td>
+                                <td>18%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>
+                                    <button type="button" class="btn btn-w-s btn-info">编辑</button>
+                                    <button type="button" class="btn btn-w-s btn-danger">删除</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                </div>
+            <!-- <div class="footer">
+                <div class="pull-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2014-2015
+                </div>
+            </div> -->
+    
+            </div>
+            </div>
+    
+        <!------------------------------------ 新增模态框 start ------------------------------------>
+        <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">新增分类</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form method="get" class="form-horizontal">
+                            <!-- <div class="form-group"><label class="col-sm-2 control-label">分类名称</label>
+                                <div class="col-sm-10">
+                                    <div id="chooseImg" style="width: 80px; height: 80px; line-height: 80px; border: 1px solid #ccc; border-radius: 8px; padding: 21px 18px;">
+                                        <span class="fa fa-picture-o" style="font-size: 40px;color: #bbb;"></span>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="form-group"><label class="col-sm-2 control-label">分类名称</label>
+                                <div class="col-sm-10"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label">链接地址</label>
+                                <div class="col-sm-10"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label">选择导航</label>
+                                <div class="col-sm-10">
+                                    <div data-toggle="buttons" class="btn-group">
+                                        <label class="btn btn-md btn-white active"> <input type="radio" id="option1" name="options"> 全部 </label>
+                                        <label class="btn btn-md btn-white"> <input type="radio" id="option1" name="options"> 设计 </label>
+                                        <label class="btn btn-md btn-white"> <input type="radio" id="option2" name="options"> 前端 </label>
+                                        <label class="btn btn-md btn-white"> <input type="radio" id="option3" name="options"> 后端 </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label">选择分类</label>
+                                <div class="col-sm-10">
+                                    <select class="input-md form-control input-s-md inline">
+                                        <option value="0">热门推荐</option>
+                                        <option value="1">最新收录</option>
+                                        <option value="2">其他子类</option>
+                                        <option value="3">其他子类</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label">分类简介</label>
+                                <div class="col-sm-10"><textarea type="text" class="form-control"> </textarea></div>
+                            </div>
+    
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------ 新增模态框 end ------------------------------------>
+    
+        <!-- Mainly scripts -->
+        <script src="../../js/jquery-2.1.1.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    
+        <!-- Custom and plugin javascript -->
+        <script src="../../js/inspinia.js"></script>
+        <script src="../../js/plugins/pace/pace.min.js"></script>
+    
+        <!-- DROPZONE -->
+        <script src="../../js/plugins/dropzone/dropzone.js"></script>
+    
+        <!-- Sweet alert -->
+        <script src="../../js/plugins/sweetalert/sweetalert.min.js"></script>
+    
+    
+        <script>
+            $(document).ready(function(){
+                // 点击删除
+                $('.demo3').click(function () {
+                    console.log('点击了')
+                    swal({
+                        title: "确定删除吗?",
+                        text: "删除之后不可恢复!",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确认删除",
+                        cancelButtonText: "取消",
+                        closeOnConfirm: false
+                    }, function () {
+                        swal({title: "删除成功!", text: "", type: "success", confirmButtonText: "完成"});
+                    });
+                });
+    
+                // 选择图片 两种方法未成功
+                console.log('dropzone',Dropzone)
+                // Dropzone('#chooseImg', {myAwesomeDropzone: {
+                //     autoProcessQueue: false,
+                //     uploadMultiple: true,
+                //     parallelUploads: 100,
+                //     maxFiles: 100,
+    
+                //     // Dropzone settings
+                //     init: function() {
+                //         var myDropzone = this;
+                //         console.log('this',this)
+    
+                //         this.element.querySelector("#chooseImg").addEventListener("click", function(e) {
+                //             e.preventDefault();
+                //             e.stopPropagation();
+                //             myDropzone.processQueue();
+                //         });
+                //         this.on("sendingmultiple", function() {
+                //             console.log('有反应')
+                //         });
+                //         this.on("successmultiple", function(files, response) {
+                //             console.log('有反应')
+                //         });
+                //         this.on("errormultiple", function(files, response) {
+                //             console.log('有反应')
+                //         });
+                //     }
+    
+                // }})
+                // Dropzone.options.myAwesomeDropzone = {
+    
+                //     autoProcessQueue: false,
+                //     uploadMultiple: true,
+                //     parallelUploads: 100,
+                //     maxFiles: 100,
+    
+                //     // Dropzone settings
+                //     init: function() {
+                //         var myDropzone = this;
+                //         console.log('this',this)
+    
+                //         this.element.querySelector("#chooseImg").addEventListener("click", function(e) {
+                //             e.preventDefault();
+                //             e.stopPropagation();
+                //             myDropzone.processQueue();
+                //         });
+                //         this.on("sendingmultiple", function() {
+                //             console.log('有反应')
+                //         });
+                //         this.on("successmultiple", function(files, response) {
+                //             console.log('有反应')
+                //         });
+                //         this.on("errormultiple", function(files, response) {
+                //             console.log('有反应')
+                //         });
+                //     }
+                // };
+    
+                
+                
+    
+            });
+        </script>
+    
+    </body>
+    
+    </html>
+    
